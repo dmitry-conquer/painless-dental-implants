@@ -82,19 +82,16 @@
   }
 }
 
-.pdi23-section {
-  background-color: var(--color-white);
-
-  &--light {
-    background-color: var(--color-light);
-  }
-}
-
 .pdi23-container {
+  background-color: var(--color-white);
   max-width: rem(1610);
   padding-inline: rem(30);
   padding-block: fluid(30, 50);
   margin: 0 auto;
+
+  &--light {
+    background-color: var(--color-light);
+  }
 
   @include medium {
     padding-inline: rem(16);
