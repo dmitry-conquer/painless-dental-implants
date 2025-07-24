@@ -1,18 +1,31 @@
 @use "../helpers/" as *;
 
 .pdi23-hero {
+  padding-top: rem(130);
+
+  @media (max-width: 1308px) {
+    padding-top: rem(150);
+  }
+
+  @media (max-width: 1024px) {
+    padding-top: rem(120);
+  }
+
+  @media (max-width: 991.98px) {
+    padding-top: 0;
+  }
+
   &__container {
     padding-top: fluid(16, 24);
     padding-bottom: 0;
   }
 
   &__image {
-    min-height: rem(200);
-
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      min-height: rem(180);
     }
   }
 

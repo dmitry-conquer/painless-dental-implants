@@ -54,29 +54,29 @@
 
   &--primary {
     background-color: var(--color-primary);
-    color: var(--color-white);
+    color: var(--color-white) !important;
 
     @include hover {
-      color: var(--color-primary);
+      color: var(--color-primary) !important;
       background-color: var(--color-white);
     }
   }
   &--secondary {
     background-color: var(--color-white);
-    color: var(--color-primary);
+    color: var(--color-primary) !important;
 
     @include hover {
-      color: var(--color-white);
+      color: var(--color-white) !important;
       background-color: var(--color-primary);
     }
   }
   &--transparent {
     background-color: transparent;
-    color: var(--color-white);
+    color: var(--color-white) !important;
     border-color: var(--color-white);
 
     @include hover {
-      color: var(--color-primary);
+      color: var(--color-primary) !important;
       background-color: var(--color-white);
     }
   }
