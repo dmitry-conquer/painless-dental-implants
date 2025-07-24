@@ -9,6 +9,8 @@
   }
 
   &__list {
+    max-width: rem(1018);
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     row-gap: fluid(24, 40);

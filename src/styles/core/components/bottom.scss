@@ -1,0 +1,35 @@
+@use "../helpers/" as *;
+
+.pdi23-bottom {
+  &__container {
+  }
+
+  &__columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: fluid(40, 60);
+
+    @include small {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__button {
+    margin-top: 1rem;
+    @include x-small {
+      align-self: stretch;
+    }
+  }
+}

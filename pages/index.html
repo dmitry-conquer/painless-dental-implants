@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" />
+
     <title>Home page</title>
   </head>
   <body data-smooth-scroll="true">
@@ -255,7 +257,10 @@
                 <h3 class="pdi23-benefits__item-title pdi23-heading-small">Natural Feel</h3>
                 <p class="pdi23-benefits__item-text pdi23-base-content">Eat, speak, and smile with confidence</p>
               </div>
-              <div class="pdi23-benefits__item pdi23-benefits__item--background" style="background-image: url('/images/dark-bg.webp');">
+              <div
+                class="pdi23-benefits__item pdi23-benefits__item--background"
+                style="background-image: url(&quot;/images/dark-bg.webp&quot;)"
+              >
                 <a href="#" class="pdi23-button pdi23-button--transparent">Call Us</a>
               </div>
               <div class="pdi23-benefits__item">
@@ -284,9 +289,150 @@
             </div>
           </div>
         </section>
+
+        <section class="pdi23-reviews pdi23-section">
+          <div class="pdi23-reviews__container pdi23-container">
+            <h2 class="pdi23-reviews__title pdi23-heading-medium">What Our Clients Say</h2>
+            <div class="pdi23-reviews__body">
+              <div class="pdi23-reviews__image">
+                <img src="/images/6.webp" alt="" />
+              </div>
+              <div class="pdi23-reviews__content">
+                <div class="pdi23-reviews__slider swiper-slider" id="reviews-slider">
+                  <div class="pdi23-reviews__wrapper swiper-wrapper">
+                    <div class="pdi23-reviews__slide swiper-slide">
+                      <span class="pdi23-reviews__slide-rating"></span>
+                      <p class="pdi23-reviews__slide-text">
+                        “I was terrified of the pain—but the team at Absolute Smile made me feel completely at ease. The
+                        procedure was quick, and I felt no pain at all!”
+                      </p>
+                      <p class="pdi23-reviews__slide-footer">
+                        <strong> Kelly R., </strong><br />
+                        South Philly
+                      </p>
+                    </div>
+                    <div class="pdi23-reviews__slide swiper-slide">
+                      <span class="pdi23-reviews__slide-rating"></span>
+                      <p class="pdi23-reviews__slide-text">
+                        “I was terrified of the pain—but the team at Absolute Smile made me feel completely at ease. The
+                        procedure was quick, and I felt no pain at all!”
+                      </p>
+                      <p class="pdi23-reviews__slide-footer">
+                        <strong> Kelly R., </strong><br />
+                        South Philly
+                      </p>
+                    </div>
+                    <div class="pdi23-reviews__slide swiper-slide">
+                      <span class="pdi23-reviews__slide-rating"></span>
+                      <p class="pdi23-reviews__slide-text">
+                        “I was terrified of the pain—but the team at Absolute Smile made me feel completely at ease. The
+                        procedure was quick, and I felt no pain at all!”
+                      </p>
+                      <p class="pdi23-reviews__slide-footer">
+                        <strong> Kelly R., </strong><br />
+                        South Philly
+                      </p>
+                    </div>
+                    <div class="pdi23-reviews__slide swiper-slide">
+                      <span class="pdi23-reviews__slide-rating"></span>
+                      <p class="pdi23-reviews__slide-text">
+                        “I was terrified of the pain—but the team at Absolute Smile made me feel completely at ease. The
+                        procedure was quick, and I felt no pain at all!”
+                      </p>
+                      <p class="pdi23-reviews__slide-footer">
+                        <strong> Kelly R., </strong><br />
+                        South Philly
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pdi23-reviews__navigation">
+                  <button
+                    type="button"
+                    class="pdi23-reviews__button pdi23-reviews__button--prev"
+                    aria-label="Prev slide"
+                    title="Prev slide"
+                  >
+                    <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.833008" y="0.5" width="47" height="47" rx="23.5" fill="white" />
+                      <rect x="0.833008" y="0.5" width="47" height="47" rx="23.5" stroke="#182B61" />
+                      <path
+                        d="M25.0399 29.293L20.7469 25H30.3329V23H20.7469L25.0399 18.707L23.6259 17.293L16.9189 24L23.6259 30.707L25.0399 29.293Z"
+                        fill="#182B61"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    class="pdi23-reviews__button pdi23-reviews__button--next"
+                    aria-label="Next slide"
+                    title="Next slide"
+                  >
+                    <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.833008" y="0.5" width="47" height="47" rx="23.5" fill="white" />
+                      <rect x="0.833008" y="0.5" width="47" height="47" rx="23.5" stroke="#182B61" />
+                      <path
+                        d="M25.0399 29.293L20.7469 25H30.3329V23H20.7469L25.0399 18.707L23.6259 17.293L16.9189 24L23.6259 30.707L25.0399 29.293Z"
+                        fill="#182B61"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pdi23-bottom pdi23-section">
+          <div class="pdi23-bottom__container pdi23-container">
+            <div class="pdi23-bottom__columns">
+              <div class="pdi23-bottom__column">
+                <h2 class="pdi23-bottom__title pdi23-heading-medium">Our Technology Makes the Difference</h2>
+                <div class="pdi23-bottom__text pdi23-base-content">
+                  <p>We use:</p>
+                  <ul>
+                    <li><strong>Cone Beam 3D CT Scans</strong></li>
+                    <li><strong>Guided Implant Software</strong></li>
+                    <li><strong>The Wand® Anesthesia Delivery System</strong></li>
+                  </ul>
+                  <p>
+                    This means shorter appointments, fewer complications, and comfortable dental implants in
+                    Philadelphia, PA, experience every time.
+                  </p>
+                </div>
+              </div>
+              <div class="pdi23-bottom__column">
+                <h2 class="pdi23-bottom__title pdi23-heading-medium">Get Started With a Pain-Free Smile</h2>
+                <div class="pdi23-bottom__text pdi23-base-content">
+                  <p>
+                    If you’re looking for a comfortable, natural, and lasting solution, painless tooth implants are the
+                    answer. Our team is here to guide you—from consultation to smile transformation.
+                  </p>
+                </div>
+                <a href="#" class="pdi23-button pdi23-bottom__button pdi23-button--primary">Book Consultation</a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       {{> footer}}
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+    <script>
+      (() => {
+        const el = document.getElementById("reviews-slider");
+        if (el) {
+          new Swiper(el, {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+              nextEl: ".pdi23-reviews__button--next",
+              prevEl: ".pdi23-reviews__button--prev",
+            },
+          });
+        }
+      })();
+    </script>
     <script type="module" src="/src/scripts/main.ts" defer></script>
   </body>
 </html>

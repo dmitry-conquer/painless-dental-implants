@@ -133,7 +133,7 @@
     }
   }
 
-  a {
+  a:not(.pdi23-button) {
     text-decoration: underline;
     color: inherit;
     line-height: inherit;
