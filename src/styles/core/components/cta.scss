@@ -1,0 +1,45 @@
+@use "../helpers/" as *;
+
+.pdi23-cta {
+  &__container {
+    display: grid;
+    grid-template-columns: 56.52% auto;
+    gap: rem(24) fluid(24, 72);
+
+    @include large {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include medium {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+  }
+
+  &__title {
+  }
+
+  &__buttons {
+    margin-top: fluid(24, 40);
+    display: flex;
+    gap: 1rem;
+
+    @include x-small {
+      flex-direction: column;
+
+      a {
+        width: 100%;
+      }
+    }
+  }
+}

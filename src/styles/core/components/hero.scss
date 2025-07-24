@@ -1,0 +1,32 @@
+@use "../helpers/" as *;
+
+.pdi23-hero {
+  &__container {
+    padding-top: fluid(16, 24);
+    padding-bottom: 0;
+  }
+
+  &__image {
+    min-height: rem(200);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    padding-block: fluid(24, 50);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(20, 24);
+  }
+
+  &__description {
+    color: var(--color-primary);
+    font-size: fluid(18, 25);
+    line-height: 1.3;
+  }
+}

@@ -1,9 +1,7 @@
 @use "helpers" as *;
 @import url("https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-$prefix: "pdi23";
-
-.#{$prefix}-wrapper {
+.pdi23-wrapper {
   --font-family-base: "Open Sans", sans-serif;
   --font-family-accent: "Lusitana", serif;
   --color-gray: #313131;
@@ -18,29 +16,30 @@ $prefix: "pdi23";
   line-height: 1.4;
 }
 
-.#{$prefix}-heading-large {
+.pdi23-heading-large {
   font-family: var(--font-family-accent);
   color: var(--color-primary);
-  font-size: fluid(32, 36);
+  font-size: fluid(28, 36);
   line-height: 1.3;
   font-weight: 700;
 }
 
-.#{$prefix}-heading-medium {
+.pdi23-heading-medium {
   font-family: var(--font-family-accent);
   color: var(--color-accent);
-  font-size: fluid(28, 32);
+  font-size: fluid(24, 32);
   line-height: 1.3;
   margin-bottom: fluid(24, 40);
 }
 
-.#{$prefix}-heading-small {
+.pdi23-heading-small {
   color: var(--color-primary);
-  font-size: fluid(24, 28);
+  font-size: fluid(20, 28);
   line-height: 1.3;
+  font-weight: 700;
 }
 
-.#{$prefix}-button {
+.pdi23-button {
   padding: rem(15) rem(24);
   border: rem(1) solid var(--color-primary);
   text-align: center;
@@ -50,6 +49,7 @@ $prefix: "pdi23";
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
   transition: all 0.3s ease;
 
   &--primary {
@@ -70,10 +70,19 @@ $prefix: "pdi23";
       background-color: var(--color-primary);
     }
   }
+  &--transparent {
+    background-color: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+
+    @include hover {
+      color: var(--color-primary);
+      background-color: var(--color-white);
+    }
+  }
 }
 
-.#{$prefix}-section {
-  padding-block: fluid(30, 50);
+.pdi23-section {
   background-color: var(--color-white);
 
   &--light {
@@ -81,12 +90,53 @@ $prefix: "pdi23";
   }
 }
 
-.#{$prefix}-container {
-  max-width: rem(1600);
+.pdi23-container {
+  max-width: rem(1610);
   padding-inline: rem(30);
+  padding-block: fluid(30, 50);
   margin: 0 auto;
 
   @include medium {
     padding-inline: rem(16);
+  }
+}
+
+.pdi23-base-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  color: var(--color-gray);
+  font-size: fluid(16, 18);
+  line-height: 1.4;
+
+  p {
+    color: inherit;
+    line-height: inherit;
+    font-size: inherit;
+  }
+
+  ul {
+    padding-left: rem(32);
+    li {
+      list-style-type: disc;
+      color: inherit;
+      line-height: inherit;
+      font-size: inherit;
+
+      &:not(:last-child) {
+        margin-bottom: rem(8);
+      }
+
+      &::marker {
+        font-size: rem(12);
+      }
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    color: inherit;
+    line-height: inherit;
+    font-size: inherit;
   }
 }
