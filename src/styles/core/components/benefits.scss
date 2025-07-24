@@ -1,9 +1,6 @@
 @use "../helpers/" as *;
 
 .pdi23-benefits {
-  &__container {
-  }
-
   &__title {
     text-align: center;
   }
@@ -13,6 +10,14 @@
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: rem(240);
     gap: fluid(12, 24);
+
+    @include large {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include small {
+      grid-template-columns: 1fr;
+      grid-auto-rows: rem(200);
+    }
   }
 
   &__item {
@@ -20,6 +25,9 @@
     background-color: var(--color-light);
     border-radius: rem(10);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-shadow:
       12px 19px 6px 0 rgba(0, 0, 0, 0),
       8px 12px 6px 0 rgba(0, 0, 0, 0.01),
@@ -45,6 +53,9 @@
     &--image {
       padding: 0;
       grid-column: span 2;
+      @include small {
+        grid-column: unset;
+      }
 
       img {
         width: 100%;
@@ -55,11 +66,12 @@
   }
 
   &__item-count {
-  }
-
-  &__item-title {
-  }
-
-  &__item-text {
+    font-family: var(--font-family-accent);
+    font-size: fluid(32, 48);
+    height: fluid(27, 37);
+    overflow: hidden;
+    display: block;
+    line-height: 1.3;
+    border-bottom: rem(1) solid var(--color-primary);
   }
 }
